@@ -2,8 +2,9 @@ import React from 'react'
 import styles from "./Footer.module.scss";
 import {NavigationContainer} from "../../Common/NavigationContainer/NavigationContainer.jsx";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBars, faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
 import {faFacebook, faInstagram, faTelegram, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return (
@@ -12,13 +13,13 @@ export const Footer = () => {
                 <div className={styles.footerNavigation}>
                     <div className={styles.navigationContainer}>
                         <div className={styles.logoBlock}>
-                            <a href="/">Logo</a>
+                            <Link to="/">Logo</Link>
                         </div>
                         <div className={styles.navigationBlock}>
-                            <a href="">Haqqımızda</a>
-                            <a href="">Kitablar</a>
-                            <a href="">İmtahanlar</a>
-                            <a href="">Bizimlə əlaqə</a>
+                            <Link to="">Haqqımızda</Link>
+                            <Link to="">Kitablar</Link>
+                            <Link to="exams">İmtahanlar</Link>
+                            <Link to="">Bizimlə əlaqə</Link>
                             <select name="languageSelection" id="languageSelection"
                                     className={styles.languageSelection}>
                                 <option value="AZ" selected>AZ</option>
@@ -33,34 +34,34 @@ export const Footer = () => {
                             <div className={styles.contactIcon}>
                                 <FontAwesomeIcon icon={faEnvelope}/>
                             </div>
-                            <a href="mailto:nümunə@gmail.com">Nümunə@gmail.com</a>
+                            <Link to="mailto:nümunə@gmail.com">Nümunə@gmail.com</Link>
                         </div>
                         <div className={styles.contactRow}>
                             <div className={styles.contactIcon}>
                                 <FontAwesomeIcon icon={faPhone}/>
                             </div>
-                            <a href="tel:+0000000000">000 000 00 00</a>
+                            <Link to="tel:+0000000000">000 000 00 00</Link>
                         </div>
                         <div className={styles.socialBlock}>
                             <div className={styles.socialItem}>
-                                <a href="https://www.instagram.com/kamranheyderliii">
+                                <Link to="https://www.instagram.com/kamranheyderliii">
                                     <FontAwesomeIcon icon={faInstagram}/>
-                                </a>
+                                </Link>
                             </div>
                             <div className={styles.socialItem}>
-                                <a href="https://www.facebook.com/">
+                                <Link to="https://www.facebook.com/">
                                     <FontAwesomeIcon icon={faFacebook}/>
-                                </a>
+                                </Link>
                             </div>
                             <div className={styles.socialItem}>
-                                <a href="https://wa.me/994516621599">
+                                <Link to="https://wa.me/994516621599">
                                     <FontAwesomeIcon icon={faWhatsapp}/>
-                                </a>
+                                </Link>
                             </div>
                             <div className={styles.socialItem}>
-                                <a href="https://web.telegram.org/a/">
+                                <Link to="https://web.telegram.org/a/">
                                     <FontAwesomeIcon icon={faTelegram}/>
-                                </a>
+                                </Link>
                             </div>
 
                         </div>
