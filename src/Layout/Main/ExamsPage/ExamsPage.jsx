@@ -56,7 +56,7 @@ export const ExamsPage = () => {
                             {participantsData.map((participant, index) => (
                                 <div key={index} className={styles.participantRow}>
                                     <div className={styles.participantName}>
-                                        <img src={`../../../../public/Icons/${participant.icon}`}
+                                        <img src={`/Icons/${participant.icon}`}
                                              alt={`place-${participant.place}`}/>
                                         <p>{participant.name}</p>
                                     </div>
