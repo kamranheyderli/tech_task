@@ -1,0 +1,60 @@
+@import "../../../../Variables/Variables.module";
+
+.mobileMenuWrapper {
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: $color-black;
+  display: flex;
+  opacity: 0;
+  transition: opacity $transition-medium;
+  pointer-events: none;
+  justify-content: center;
+  padding: 75px 0 0 0;
+  &.mobileMenuOpen {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .mobileMenuContent {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 120px;
+    width: 100%;
+    .closeMenu {
+    position: absolute;
+      right: 25px;
+      top: 25px;
+      transition: $transition-fast;
+      &:hover {
+        transform: rotate(360deg);
+      }
+
+      svg {
+        color: $color-white;
+        font-size: 25px;
+        cursor: pointer;
+      }
+    }
+    a {
+      color: $color-white;
+      transition: $transition-fast;
+      &:hover {
+        color: #8f8f8f;
+      }
+    }
+    .languageSelection {
+      background: $color-black;
+      color: $color-white;
+    }
+  }
+}
+@media screen and (min-width: 851px){
+  .mobileMenuWrapper {
+    &.mobileMenuOpen {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}

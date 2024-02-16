@@ -1,0 +1,245 @@
+@import "../../../../Variables/Variables.module";
+@import "../../../../Animations/Animations.module";
+
+
+.footerWrapper {
+  display: flex;
+  width: 100%;
+  padding: 50px 30px 0 30px;
+  justify-content: center;
+  background: $color-container;
+
+  .footerContent {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: column;
+
+    .footerNavigation {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+
+      .navigationContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .logoBlock {
+          display: block;
+
+          &:hover {
+            animation: logoRotate 1s linear;
+          }
+
+          a {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 48px;
+            text-align: left;
+          }
+        }
+
+        .navigationBlock {
+          display: flex;
+          gap: 25px;
+          align-items: center;
+
+          a {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: left;
+            transition: $transition-fast;
+
+            &:hover {
+              color: rgba(0, 0, 0, 0.5);
+            }
+          }
+
+          .languageSelection {
+            font-size: 16px;
+            font-weight: 500;
+            border: transparent;
+            outline: 0;
+            background: #D9D9D9;
+            border-radius: 10px;
+            padding: 8px 12px 8px 12px;
+          }
+        }
+      }
+
+      .contactColumn {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0 0 0;
+        gap: 24px;
+
+        .contactRow {
+          display: inline-flex;
+          align-items: center;
+          gap: 12px;
+
+          .contactIcon {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #E9E9E9;
+
+            svg {
+              font-size: 20px;
+            }
+          ;
+          }
+
+          a {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+          }
+        }
+      }
+
+      .socialBlock {
+        display: flex;
+        margin-left: auto;
+        gap: 20px;
+
+        .socialItem {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #E9E9E9;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          transition: $transition-fast;
+          svg {
+            font-size: 24px;
+          }
+          &:hover {
+            transform: rotate(360deg);
+          }
+          &:nth-child(1):hover {
+            svg {
+              color: purple;
+            }
+          }
+          &:nth-child(2):hover {
+            svg {
+              color: blue;
+            }
+          }
+          &:nth-child(3):hover {
+            svg {
+              color: green;
+            }
+          }
+          &:nth-child(4):hover {
+            svg {
+              color: cornflowerblue;
+            }
+          }
+
+        }
+
+      }
+
+      .copyrightBlock {
+        display: flex;
+        width: 100%;
+        border-top: 1px solid $color-gray;
+        padding: 20px 0;
+
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footerWrapper {
+    .footerContent {
+      .footerNavigation {
+        .navigationContainer {
+          .logoBlock {
+            a {
+              font-size: 24px;
+            }
+
+          }
+
+          .navigationBlock {
+            gap: 10px;
+
+            a {
+              font-size: 14px;
+            }
+
+            .languageSelection {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footerWrapper {
+    padding: 25px 10px 0 10px;
+    .footerContent {
+      .footerNavigation {
+        .navigationContainer {
+          flex-direction: column;
+
+          .logoBlock {
+            margin-bottom: 15px;
+          }
+
+          .navigationBlock {
+            gap: 15px;
+            flex-direction: column;
+
+            .languageSelection {
+              padding: 5px 25px 5px 25px
+            }
+          }
+        }
+
+        .contactColumn {
+          align-items: center;
+          margin: 25px 0 0 0;
+
+          .contactRow {
+            width: 230px;
+            justify-content: center;
+          }
+        }
+
+        .socialBlock {
+          margin: auto;
+        }
+
+        .copyrightBlock {
+          justify-content: center;
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

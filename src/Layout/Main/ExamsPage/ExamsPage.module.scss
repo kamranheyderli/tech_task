@@ -1,0 +1,634 @@
+@import "../../../Variables/Variables.module";
+
+.examsPageWrapper {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  .examsPageContent {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    padding: 90px 0px 0 0px;
+
+    .examsBlackSection {
+      display: flex;
+      height: 400px;
+      width: 100%;
+      justify-content: space-between;
+      padding: 75px 30px 0 75px;
+      background: $color-black;
+      border-radius: 12px;
+      position: relative;
+
+      .textBlock {
+        color: $color-white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1 {
+          margin-bottom: 20px;
+          font-size: 36px;
+          font-weight: 700;
+          line-height: 54px;
+        }
+
+        li {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: left;
+          margin-left: 10px;
+        }
+
+        .buyButton {
+          max-width: 179px;
+          height: 44px;
+          outline: 0;
+          background: $color-white;
+          color: $color-black;
+          border-radius: 12px;
+          border-color: transparent;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          text-align: center;
+          cursor: pointer;
+          margin-top: 30px;
+          transition: $transition-fast;
+
+          &:hover {
+            background: gray;
+            color: $color-white;
+            border-color: $color-white;
+          }
+        }
+      }
+
+      .blackSectionImage {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        right: 75px;
+        top: 0;
+      }
+    }
+
+    .examsResultsSection {
+      display: flex;
+      width: 100%;
+      padding: 100px 0 60px 0;
+      gap: 30px;
+
+      .examsInfo {
+        display: flex;
+        width: 100%;
+        max-width: 648px;
+        background: $color-container;
+        box-shadow: 4px 4px 8px 4px #0000000d;
+        border-radius: 12px;
+        padding: 30px;
+        flex-direction: column;
+        gap: 0;
+
+        h3 {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 32px;
+          margin-bottom: 30px;
+        }
+
+        .examsDetails {
+          display: flex;
+          width: 100%;
+          gap: 40px;
+          align-items: center;
+          padding-left: 10px;
+          margin: 0 0 40px 0;
+
+          .detailBlock {
+            gap: 15px;
+            display: inline-flex;
+            align-items: center;
+
+            svg {
+              font-size: 20px;
+            }
+
+            p {
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 24px;
+            }
+          }
+        }
+
+        li {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: left;
+          margin-left: 10px;
+        }
+      }
+
+      .examsResults {
+        display: flex;
+        width: 100%;
+        max-width: 521px;
+        background: $color-container;
+        box-shadow: 4px 4px 8px 4px #0000000d;
+        border-radius: 12px;
+        flex-direction: column;
+        padding: 30px;
+
+        h2 {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 32px;
+        }
+
+        .participantsResults {
+          display: flex;
+          flex-direction: column;
+          margin-top: 25px;
+          width: 100%;
+          gap: 15px;
+
+          .participantRow {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+
+            .participantName {
+              display: inline-flex;
+              gap: 15px;
+              align-items: center;
+
+              img {
+                width: 35px;
+                height: 35px;
+              }
+
+              p {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+              }
+            }
+
+            .participantScore {
+              display: inline-flex;
+              align-items: center;
+              gap: 10px;
+
+              .dot {
+                width: 6px;
+                height: 6px;
+                background: $color-black;
+                border-radius: 50%;
+              }
+
+              p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                text-align: center;
+              }
+
+              h5 {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 20px;
+                text-align: center;
+              }
+
+              svg {
+                margin-left: 10px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .commentsSection {
+      display: flex;
+      padding: 50px 0 75px 0;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+
+      .commentsSummaryContent {
+        display: flex;
+        width: 100%;
+        padding: 50px 75px 50px 75px;
+        background: $color-container;
+        border-radius: 12px;
+        box-shadow: 4px 4px 8px 4px #0000000d;
+        gap: 100px;
+
+        .commentsSummary {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+
+          h1 {
+            font-size: 64px;
+            font-weight: 500;
+            line-height: 78px;
+          }
+
+          .commentsCount {
+            display: inline-flex;
+            gap: 15px;
+            align-items: center;
+
+            svg {
+              font-size: 20px;
+            }
+
+            p {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+            }
+          }
+        }
+
+        .commentsDetails {
+          display: flex;
+          max-width: 600px;
+          width: 100%;
+          flex-direction: column;
+          gap: 15px;
+
+          .detailRow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            height: 25px;
+
+            p {
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 22px;
+              margin-top: 2px;
+            }
+
+            .starsBlock {
+              display: inline-flex;
+              gap: 2px;
+              align-items: center;
+
+              svg {
+                font-size: 12px;
+              }
+            }
+
+            .loadingBar {
+              display: flex;
+              width: 400px;
+              height: 8px;
+              max-width: 400px;
+              border-radius: 12px;
+              overflow: hidden;
+              margin-left: 5px;
+
+              .loadingBarFiller {
+                width: 100%;
+                height: 100%;
+                background: #d9d9d9;
+                border-radius: 0 12px 12px 0;
+              }
+            }
+          }
+        }
+      }
+
+      .commentsTotalContent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        gap: 18px;
+        padding: 50px 0;
+
+        .commentCard {
+          display: flex;
+          flex-direction: column;
+          width: 29%;
+          background: $color-container;
+          border-radius: 12px;
+          padding: 25px 20px;
+          gap: 20px;
+
+          h3 {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+          }
+
+          .ratingBlock {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+
+            svg {
+              font-size: 15px;
+
+              &:nth-child(5) {
+                color: #c5c5c5;
+              }
+            }
+
+            p {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 22px;
+              color: #00000099;
+            }
+          }
+
+          p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: left;
+          }
+        }
+      }
+
+      .showMore {
+        width: 100%;
+        max-width: 116px;
+        height: 44px;
+        border-radius: 12px;
+        outline: 0;
+        border: 1px solid #d9d9d9;
+        background: transparent;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        transition: $transition-fast;
+
+        &:hover {
+          background: $color-black;
+          color: $color-white;
+          border-color: $color-black;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .examsPageWrapper {
+    .examsPageContent {
+      .examsBlackSection {
+        padding: 75px 0 0 50px;
+
+        .textBlock {
+          h1 {
+            font-size: 28px;
+          }
+
+          li {
+            font-size: 12px;
+          }
+        }
+
+        .blackSectionImage {
+          right: 25px;
+        }
+      }
+
+      .examsResultsSection {
+        .examsInfo {
+          max-width: 348px;
+
+          .examsDetails {
+            gap: 10px;
+            flex-direction: column;
+            align-items: start;
+          }
+        }
+
+        .examsResults {
+          max-width: unset;
+
+          .participantsResults {
+            .participantRow {
+              .participantName {
+                p {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .commentsSection {
+        padding: 25px 0 50px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .examsPageWrapper {
+    .examsPageContent {
+      .examsBlackSection {
+        height: 300px;
+        padding: 25px 0 0 25px;
+
+        .blackSectionImage {
+          right: 15px;
+          width: 300px;
+          height: 300px;
+        }
+      }
+
+      .commentsSection {
+        .commentsSummaryContent {
+          flex-direction: column;
+          gap: 25px;
+          padding: 25px 35px;
+          .commentsSummary {
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 851px) {
+  .examsPageWrapper {
+    .examsPageContent {
+      .commentsSection {
+        padding: 25px 0 25px 0;
+
+        .commentsTotalContent {
+          padding: 25px 0;
+          .commentCard {
+            max-width: unset;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .examsPageWrapper {
+    .examsPageContent {
+      .examsBlackSection {
+        height: 300px;
+        padding: 25px 0 0 25px;
+
+        .textBlock {
+          width: 100%;
+
+          h1 {
+            margin-bottom: 10px;
+          }
+
+          li {
+            font-size: 15px;
+          }
+
+          .buyButton {
+            max-width: 120px;
+            height: 35px;
+            font-size: 12px;
+          }
+        }
+
+        .blackSectionImage {
+          display: none;
+        }
+      }
+
+      .examsResultsSection {
+        padding: 50px 0 30px 0;
+        flex-direction: column;
+
+        .examsInfo {
+          max-width: unset;
+        }
+
+        .examsResults {
+          max-width: unset;
+
+          .participantsResults {
+            .participantRow {
+              .participantName {
+                p {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .examsPageWrapper {
+    .examsPageContent {
+      .examsBlackSection {
+        height: auto;
+        padding: 25px;
+
+        .textBlock {
+          h1 {
+            font-size: 20px;
+            margin-bottom: 0;
+          }
+
+          li {
+            font-size: 12px;
+          }
+
+          .buyButton {
+            margin-top: 15px;
+          }
+        }
+
+        .blackSectionImage {
+          display: none;
+        }
+      }
+
+      .commentsSection {
+        .commentsSummaryContent {
+          .commentsSummary {
+            h1 {
+              font-size: 42px;
+            }
+          }
+          .commentsDetails {
+            .detailRow {
+              flex-direction: column;
+              align-items: start;
+              height: auto;
+              gap: 15px;
+              .loadingBar {
+                max-width: unset;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .examsPageWrapper {
+   
+    .examsPageContent {
+      padding: 90px 5px 0 5px;
+
+      .examsResultsSection {
+        .examsResults {
+          align-items: center;
+
+          h2 {
+            font-size: 16px;
+          }
+
+          .participantsResults {
+            gap: 25px;
+
+            .participantRow {
+              flex-direction: column;
+              gap: 10px;
+              align-items: center;
+            }
+          }
+        }
+      }
+      .commentsSection{
+        .commentsTotalContent {
+          display: flex;
+          flex-direction: column;
+          .commentCard{
+            width: 100%;
+          }
+        }
+      }
+     
+    }
+  }
+}

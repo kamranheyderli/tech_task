@@ -1,0 +1,21 @@
+@import "./Variables/Variables.module";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: $font-main;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: $color-black;
+}
+a {
+  text-decoration: none;
+  color: $color-black;
+}

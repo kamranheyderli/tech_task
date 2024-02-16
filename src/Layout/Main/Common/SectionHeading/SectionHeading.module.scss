@@ -1,0 +1,40 @@
+.sectionHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .sectionHeading {
+    gap: 10px;
+    h5 {
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .sectionHeading {
+    gap: 5px;
+    h5 {
+      font-size: 12px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+}

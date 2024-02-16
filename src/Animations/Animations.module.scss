@@ -1,0 +1,36 @@
+@import "../Variables/Variables.module";
+@keyframes logoRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 0 black;
+  }
+  25% {
+    text-shadow: 0 0 5px black;
+  }
+  50% {
+    text-shadow: 0 0 25px black;
+
+  }
+  75% {
+    text-shadow: 0 0 5px black;
+  }
+  100% {
+    text-shadow: 0 0 0 black;
+  }
+}

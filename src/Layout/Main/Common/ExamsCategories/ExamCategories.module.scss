@@ -1,0 +1,61 @@
+@import "../../../../Variables/Variables.module";
+.examsLeft {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  flex-direction: column;
+  background: $color-container;
+  border-radius: 12px;
+  padding: 30px 25px;
+  height: min-content;
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+  }
+  h4 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 25px;
+  }
+  .categoryItems {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin-top: 25px;
+    .categoryItem {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: $transition-fast;
+      &.selectedCategory {
+        background: $color-black;
+        color: $color-white;
+      }
+      &:hover {
+        background: $color-black;
+        color: $color-white;
+      }
+    }
+  }
+}
+@media screen and (max-width: 725px) {
+  .examsLeft {
+    max-width: unset;
+    .categoryItems {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}

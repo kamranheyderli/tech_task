@@ -1,0 +1,192 @@
+@import "../../../../Variables/Variables.module";
+
+.examsRight {
+  display: flex;
+  width: 100%;
+  max-width: 766px;
+  flex-direction: column;
+  .cardsBlock {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    .examCard {
+      display: flex;
+      max-width: 373px;
+      flex-direction: column;
+      background: $color-container;
+      border-radius: 12px;
+      padding: 30px 25px;
+      gap: 25px;
+      width: 100%;
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: left;
+      }
+
+      .infoBlock {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .duration {
+          display: inline-flex;
+          gap: 15px;
+          align-items: center;
+          p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28px;
+          }
+        }
+        .rating {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          .starsBlock {
+            display: inline-flex;
+            gap: 2px;
+            align-items: center;
+            svg {
+              font-size: 16px;
+            }
+            svg:nth-child(5) {
+              color: #C5C5C5;
+            }
+          }
+          .dot {
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: $color-black;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+          }
+        }
+      }
+      .questionsBlock {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #D9D9D9;
+        padding-bottom: 25px;
+        ul {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+          margin-bottom: 13px;
+        }
+        li {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 28px;
+          text-align: left;
+
+        }
+      }
+      .tagsBlock {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+        .tag {
+          border-radius: 12px;
+          background: #D9D9D9;
+          padding: 4px 16px 4px 16px;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 22px;
+          text-align: center;
+        }
+      }
+      .buyButton {
+        padding: 8px 0;
+        border-radius: 12px;
+        outline: 0;
+        margin-top: auto;
+        border: 1px solid $color-black;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        background: transparent;
+        transition: $transition-fast;
+        cursor: pointer;
+        &:hover {
+          background: $color-black;
+          color: $color-white;
+        }
+      }
+    }
+    .noExamsMessage{
+      padding: 25%;
+      p{
+        color: black;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+
+      }
+    }
+  }
+  .showMore {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    button {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: center;
+      width: 116px;
+      height: 44px;
+      border-radius: 12px;
+      background: transparent;
+      outline: 0;
+      transition: $transition-fast;
+      border: 1px solid #D9D9D9;
+      &:hover {
+        background: $color-black;
+        color: $color-white;
+        border-color: $color-black;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1250px) {
+  .examsRight  {
+    .cardsBlock {
+      .examCard {
+        max-width: 765px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 725px) {
+  .examsRight  {
+    .cardsBlock {
+      .examCard {
+        max-width: unset;
+      }
+    }
+    .showMore {
+      margin-top: 25px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .examsRight  {
+    .cardsBlock {
+    .infoBlock {
+      flex-direction: column;
+      gap: 10px;
+    }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "title": "İbtidai sinif imtahanı",
+    "duration": "30 dəqiqə",
+    "votes": 3,
+    "questions": [
+      "5 sual - Azərbaycan dili",
+      "5 sual - Riyaziyyat"
+    ],
+    "tags": [
+      "İbtidai sinif",
+      "Riyaziyyat",
+      "Azərbaycan dili"
+    ],
+    "price": "Pulsuz - indi al",
+    "category": "Ibtidai sinif"
+  },
+  {
+    "id": 2,
+    "title": "5-ci sinif imtahanı",
+    "duration": "40 dəqiqə",
+    "votes": 5,
+    "questions": [
+      "10 sual - Azərbaycan dili",
+      "10 sual - Riyaziyyat"
+    ],
+    "tags": [
+      "Orta məktəb",
+      "Fənn imtahanı",
+      "Riyaziyyat",
+      "5-ci sinif"
+    ],
+    "price": "3 AZN- indi al",
+    "category": "İbtidai sinif"
+  },
+  {
+    "id": 3,
+    "title": "Lisey imtahanı",
+    "duration": "60 dəqiqə",
+    "votes": 2,
+    "questions": [
+      "20 sual - Azərbaycan tarixi",
+      "20 sual - Riyaziyyat"
+    ],
+    "tags": [
+      "Lisey",
+      "Azərbaycan tarixi",
+      "Riyaziyyat"
+
+    ],
+    "price": "8 AZN - indi al",
+    "category": "Liseylərə"
+  },
+  {
+    "id": 4,
+    "title": "Fizika müəllimliyi imtahanı",
+    "duration": "45 dəqiqə",
+    "votes": 1,
+    "questions": [
+      "15 sual- Fizika",
+      "15 sual- Matematika"
+    ],
+    "tags": [
+      "Müəllimlər",
+      "Fizika",
+      "Matematika"
+    ],
+    "price": "5 AZN - indi al",
+    "category": "Fənn imtahanı"
+  },
+  {
+    "id": 5,
+    "title": "Kimya müəllimliyi imtahanı",
+    "duration": "50 dəqiqə",
+    "votes": 4,
+    "questions": [
+      "15 sual - Kimya",
+      "15 sual - Biologiya"
+    ],
+    "tags": [
+      "Biologiya",
+      "Kimya",
+      "Müəllimlər"
+    ],
+    "price": "12 AZN - indi al",
+    "category": "Fənn imtahanı"
+  },
+  {
+    "id": 6,
+    "title": "İngilis dili sertifikat imtahanı",
+    "duration": "90 dəqiqə",
+    "votes": 7,
+    "questions": [
+      "30 sual - İngilis dili",
+      "20 sual - Qrammatika"
+    ],
+    "tags": [
+      "Tələbələr",
+      "İngilis dili",
+      "Qrammatika"
+    ],
+    "price": "3 AZN - indi al",
+    "category": "Blok"
+  }
+]

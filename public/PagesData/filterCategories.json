@@ -1,0 +1,10 @@
+[
+  { "id": 1, "category": "Ibtidai sinif" },
+  { "id": 2, "category": "Buraxılış" },
+  { "id": 3, "category": "Blok" },
+  { "id": 4, "category": "Təkmilləşdirmə" },
+  { "id": 5, "category": "Liseylərə" },
+  { "id": 6, "category": "Magistratura" },
+  { "id": 7, "category": "Olimpiada" },
+  { "id": 8, "category": "Fənn imtahanı" }
+]
